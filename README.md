@@ -63,7 +63,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## Author
 
-Developed by **Afzal**
+Developed by **Mohammed Afjal Shaikh**
 
 ## Contributing
 
