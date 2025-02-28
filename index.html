@@ -43,5 +43,26 @@
         </div>
       </div>
     </article>
+    <button class="print-button" onclick="window.print()">
+      Print Letterhead
+    </button>
+
+    <script>
+      // Check if we're on mobile and show the print button accordingly
+      function updatePrintButtonVisibility() {
+        const printButton = document.querySelector(".print-button");
+        if (window.innerWidth <= 767) {
+          printButton.style.display = "block";
+        } else {
+          printButton.style.display = "none";
+        }
+      }
+
+      // Run on page load
+      updatePrintButtonVisibility();
+
+      // Run on window resize
+      window.addEventListener("resize", updatePrintButtonVisibility);
+    </script>
   </body>
 </html>

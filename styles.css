@@ -13,6 +13,7 @@ body {
   align-items: center;
   min-height: 100vh;
   padding: 20px;
+  flex-direction: column;
 }
 
 .letterhead {
@@ -115,6 +116,22 @@ body {
   text-align: right;
 }
 
+.print-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #db0000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  display: none;
+}
+
+.print-button:hover {
+  background-color: #bc0000;
+}
+
 @media print {
   body {
     background: none;
@@ -125,6 +142,10 @@ body {
     box-shadow: none;
     width: 100%;
     height: 100%;
+  }
+
+  .print-button {
+    display: none;
   }
 }
 
@@ -184,5 +205,11 @@ body {
     left: 9mm;
     right: 9mm;
     font-size: 6pt;
+  }
+
+  .print-button {
+    display: block;
+    width: 90%;
+    max-width: 200px;
   }
 }
