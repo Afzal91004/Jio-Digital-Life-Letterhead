@@ -128,57 +128,61 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   body {
-    padding: 10px;
+    padding: 0;
+    display: block;
   }
 
   .letterhead {
-    padding: 10mm;
-    aspect-ratio: auto;
+    width: 100%;
+    height: auto;
     min-height: 100vh;
+    padding: 15px;
+    box-shadow: none;
   }
 
   .logo-container {
-    top: 10mm;
-    left: 10mm;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 60%;
+    max-width: 200px;
+    margin: 0 auto 20px;
+    text-align: center;
   }
 
   .content-area {
-    margin-top: 30mm;
-    min-height: auto;
+    margin-top: 20px;
+    min-height: 50vh;
   }
 
-  .contact-footer {
-    position: relative;
-    flex-direction: column;
-    bottom: auto;
-    left: 0;
-    right: 0;
-    width: 100%;
-    margin-top: 40mm;
-  }
-
-  .contact-info {
-    margin-bottom: 15px;
-  }
-
+  .contact-info,
   .contact-details {
-    text-align: left;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    text-align: center;
+    margin: 20px auto;
   }
 
   .footer {
     position: relative;
-    flex-direction: column;
     bottom: auto;
-    left: 0;
-    right: 0;
-    width: 100%;
-    margin-top: 20px;
+    left: auto;
+    right: auto;
+    margin-top: 30px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-right {
+    text-align: center;
   }
 
   .footer-right {
-    text-align: left;
     margin-top: 5px;
   }
 }
