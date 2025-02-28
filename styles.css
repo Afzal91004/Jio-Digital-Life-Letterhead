@@ -127,3 +127,58 @@ body {
     height: 100%;
   }
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .letterhead {
+    padding: 10mm;
+    aspect-ratio: auto;
+    min-height: 100vh;
+  }
+
+  .logo-container {
+    top: 10mm;
+    left: 10mm;
+  }
+
+  .content-area {
+    margin-top: 30mm;
+    min-height: auto;
+  }
+
+  .contact-footer {
+    position: relative;
+    flex-direction: column;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 40mm;
+  }
+
+  .contact-info {
+    margin-bottom: 15px;
+  }
+
+  .contact-details {
+    text-align: left;
+  }
+
+  .footer {
+    position: relative;
+    flex-direction: column;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .footer-right {
+    text-align: left;
+    margin-top: 5px;
+  }
+}
